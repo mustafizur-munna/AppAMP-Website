@@ -1,0 +1,623 @@
+/*=========== Global CSS =============*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1340px;
+    margin: auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+.clear{
+    content: "";
+    clear: both;
+    display: block;
+}
+body, h1, h2, h3, h4, h5, h6, p, span{
+    font-family: 'Work Sans', sans-serif;
+}
+.default-btn{
+    text-decoration: none;
+    color: #7d7d7d;
+    background: #fff;
+    padding: 19px 31px;
+    font-size: 20px;
+    margin-left: 21px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.default-btn:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+
+/*=========== Header CSS =============*/
+
+.header {
+    position: fixed;
+    z-index: 11;
+    background: #fff;
+    width: 100%;
+    padding: 7px 0;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo span{
+    font-size: 23px;
+    font-weight: 600;
+    top: -18px;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+.header-logo span:hover{
+    color: #cccccc;
+}
+.header-logo img{
+    width: 50px;
+    margin-top: 9px;
+}
+.header-menu{
+    width: 55%;
+}
+.header-menu ul{
+    list-style: none;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 22px 20px;
+    font-weight: 500;
+}
+.header-menu ul li {
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    display: none;
+}
+.header-menu ul li ul li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.header-menu ul li:hover ul{
+    display: block;
+}
+.header-btn{
+    width: 13%;
+}
+.header-btn a{
+    text-decoration: none;
+    border: 2px solid #6278df;
+    color: #6278df;
+    padding: 11px 23px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 9px;
+}
+.header-btn a:hover{
+    background-color: #6278df;
+    color: #fff;
+    transition: .4s;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/*=========== Banner CSS =============*/
+
+.banner{
+    text-align: center;
+    background: url(images/mbr-4.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    color: #fff;
+    background-blend-mode: color;
+    position: relative;
+    z-index: 9;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.banner-content h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+.banner-content a{
+    text-decoration: none;
+    color: #7d7d7d;
+    background: #fff;
+    padding: 19px 31px;
+    font-size: 20px;
+    margin-left: 21px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.banner-content a i{
+    margin-right: 7px;
+}
+.banner-content a:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+
+/*=========== Video-section CSS =============*/
+.video-section{
+    padding: 110px 0;
+    margin-bottom: 300px;
+}
+.video-left{
+    width: 50%;
+}
+.video-right{
+    width: 50%;
+}
+.video-right h1{
+    font-weight: 400;
+    font-size: 51px;
+    margin-bottom: 29px;
+}
+.video-right p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #767676;
+}
+
+/*=========== Learn-section CSS =============*/
+
+.learn-section{
+    padding: 100px 0;
+    margin-bottom: 550px;
+}
+.learn-title{
+    text-align: center;
+}
+.learn-title h1 {
+    font-size: 53px;
+}
+.learn-title h3 {
+    color: #767676;
+    font-weight: 350;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+.service-items {
+    margin-top: 80px;
+}
+.service-box {
+    width: 32%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    margin-right: 2%;
+    margin-bottom: 25px;
+    padding: 55px 25px;
+    box-sizing: border-box;
+}
+.service-box:nth-child(3n+3){
+    margin-right: 0;
+}
+.s-icon {
+    width: 50px;
+    height: 150px;
+    float: left;
+    font-size: 46px;
+    margin-right: 15px;
+    color: #6278df;
+}
+.s-content h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: 450;
+}
+.s-content p {
+    padding-top: 38px;
+    font-size: 20px;
+    color: #767676;
+    line-height: 33px;
+}
+
+/*=========== Pricing CSS =============*/
+
+.pricing-section {
+    padding-bottom: 950px;
+    padding-top: 60px;
+    background: #f7f9ff;
+}
+.pricing-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.pricing-title h1 {
+    font-weight: 400;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.pricing-title p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #767676;
+}
+
+.pricing-box {
+    width: 32%;
+    margin-right: 2%;
+    background: #fff;
+    box-sizing: border-box;
+    transition: .4s;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+.pricing-box:nth-child(3){
+    margin-right: 0;
+}
+.pricing-box:hover .pricing-box-heading{
+    background-color: #6278df;
+    color: #fff;
+    transition: .4s;
+}
+.pricing-box:hover .pricing-box-content a{
+    background-color: #6278df;
+    color: #fff;
+    transition: .4s;
+}
+.pricing-box-heading {
+    border-bottom: 2px solid #ddd;
+    padding: 40px 28px;
+}
+.pricing-box-heading h3 {
+    font-size: 33px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.pricing-box-heading h1 {
+    font-size: 50px;
+    margin-bottom: 33px;
+}
+.pricing-box-heading h1 span {
+    font-size: 19px;
+}
+.pricing-box-heading h4 {
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+.pricing-box-heading p {
+    font-size: 24px;
+    font-weight: 250;
+}
+.pricing-box-content{
+    padding: 40px 28px;
+}
+.pricing-box-content ul {
+    list-style: none;
+    margin: 40px 0;
+}
+.pricing-box-content ul li {
+    line-height: 45px;
+    font-size: 19px;
+    font-weight: 200;
+}
+.pricing-box-content ul li i {
+    font-size: 26px;
+    color: #6278df;
+    margin-right: 10px;
+}
+.pricing-box-content a {
+    color: #6278df;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 20px 25px;
+    box-shadow: 0px 0px 22px -9.5px;
+    display: inline-block;
+    width: 58%;
+    margin-left: 60px;
+    text-align: center;
+    border-radius: 8px;
+    transition: .4s;
+}
+.pricing-box .pricing-box-content a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/*=========== Team Section CSS =============*/
+
+.team-section {
+    padding-top: 80px;
+    padding-bottom: 545px;
+}
+.title h2 {
+    margin-bottom: 45px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 400;
+}
+.team-member-item {
+    width: 23%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+.team-member-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.team-member-item h3 {
+    font-weight: 500;
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-left: 13px;
+}
+.team-member-item p {
+    color: #767676;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+/*=========== Newsletter Section CSS =============*/
+
+.newsletter-section {
+    padding: 100px 0;
+    background: #f7f9ff;
+}
+.newsletter-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.newsletter-title h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #767676;
+}
+.newsletter-title h1 {
+    font-size: 47px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.newsletter-form {
+    text-align: center;
+}
+.default-input {
+    width: 350px;
+    padding: 20px 15px;
+    border: 1px solid #e4e4e4;
+    border-radius: 7px;
+    font-size: 20px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    box-sizing: border-box;
+}
+.default-input:focus {
+    border: 1px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+.submit-btn {
+    background: #6278df;
+    color: #fff;
+    padding: 20px 90px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    margin-left: 9px;
+    cursor: pointer;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    transition: .4s;
+}
+.submit-btn:hover {
+    background: #fff;
+    color: #6278df;
+    border: 1px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/*=========== Blog Section CSS =============*/
+
+.blog-section{
+    padding: 120px 0;
+    margin-bottom: 200px;
+}
+.blog-title-heading{
+    width: 50%;
+    margin-top: 30px;
+}
+.blog-title-heading h1 {
+    font-size: 47px;
+    font-weight: 400;
+}
+.blog-title-content{
+    width: 50%;
+}
+.blog-title-content p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.7em;
+}
+.blog-items {
+    padding-top: 76px;
+}
+.blog-single-item {
+    transition: .4s;
+    width: 48%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+.blog-single-item:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+.blog-single-item img {
+    width: 300px;
+    float: left;
+}
+.blog-single-item h3 {
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 31px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.blog-single-item p {
+    margin: 0 30px;
+    display: inline-block;
+    width: 44%;
+    float: right;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #767676;
+}
+
+/*=========== Testimonial Section CSS =============*/
+
+.testimonial-section {
+    padding-top: 100px;
+    background-color: #f7f9ff;
+    padding-bottom: 550px;
+}
+.testimonial-items{
+    width: 31.3%;
+    margin-right: 2%;
+}
+.testimonial-box {
+    margin-bottom: 52px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    transition: .2s;
+}
+.testimonial-box:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+.testimonial-box p{
+    background: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding: 45px;
+    color: #767676;
+    line-height: 1.7em;
+    position: relative;
+}
+.testimonial-box p::before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 99px;
+    opacity: 0.2;
+    top: 46px;
+    left: 30px;
+}
+.testimonial-box p::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.user-info {
+    margin-left: 103px;
+}
+.user-info img {
+    width: 85px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 40px;
+}
+.user-info h4 {
+    font-size: 23px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.user-info span{}.user-info span {
+    color: #767676;
+    font-size: 20px;
+}
+
+/*=========== Contact Section CSS =============*/
+
+.contact-section {
+    padding-top: 65px;
+    padding-bottom: 850px;
+}
+.contact-left{
+    width: 48%;
+}
+.contact-right {
+    width: 48%;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    margin-top: 28px;
+}
+.contact-right h3 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.contact-right p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.7em;
+    margin-bottom: 35px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 48%;
+}
+.contact-form input, textarea {
+    margin: 10px 0;
+}
+.contact-form button {
+    margin-top: 11px;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+/*=========== Footer Section CSS =============*/
+
+footer {
+    padding: 30px 0;
+}
+footer p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+}
